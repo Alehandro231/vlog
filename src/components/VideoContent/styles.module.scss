@@ -1,0 +1,10 @@
+@import '../../assets/assets.module.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    iframe {
+        border-radius: $mainBorderRadius;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../assets/assets.module.scss';
+@import '../../assets/cardImages/cardImages.styles.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    padding: 24px;
+    border-radius: $mainBorderRadius;
+    border: 1px solid $mainBorderColor;
+    text-align: center;
+    cursor: pointer;
+    transition: $mainTransition;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    font-weight: bold;
+    font-size: 28px;
+
+    &:hover {
+        box-shadow: $mainBoxShadow;
+    }
+
+    .title {
+        padding: 4px 12px;
+        border-radius: $mainBorderRadius;
+        background: rgb(100%, 100%, 100%, 0.7);
+    }
+}
+
+.egypt {
+    background-image: $egypt;
+}
+
+.hotel_and_other {
+    background-image: $hotel_and_other;
+}
+
+.hotel_animation {
+    background-image: $hotel_animation;
+}
+
+.egypt-airport {
+    background-image: $egypt-airport;
+}

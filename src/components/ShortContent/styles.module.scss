@@ -1,0 +1,14 @@
+@import '../../assets/assets.module.scss';
+
+.container {
+    padding: 8px;
+    border-radius: $mainBorderRadius;
+    border: 1px solid $mainBorderColor;
+    text-align: center;
+    cursor: pointer;
+    transition: $mainTransition;
+
+    &:hover {
+        box-shadow: $mainBoxShadow;
+    }
+}

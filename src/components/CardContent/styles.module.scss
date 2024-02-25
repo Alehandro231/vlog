@@ -1,0 +1,68 @@
+@import '../../assets/assets.module.scss';
+
+.card {
+    margin-bottom: 16px;
+    border-radius: $mainBorderRadius;
+    cursor: pointer;
+    border: 1px solid $mainBorderColor;
+    transition: $mainTransition;
+    
+    &:hover {
+        box-shadow: $mainBoxShadow
+    }
+}
+
+.content {
+    padding: 16px;
+
+    .titleContainer {
+        display: flex;
+    
+        .titleLeftContent {
+            margin-right: 8px;
+        }
+    
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.88);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    
+    .description {
+        margin-top: 8px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.45);
+    }
+}
+
+@each $screenWidth, $cardWidth in $breakpointsCardSize {
+    @media screen and (max-width: $screenWidth) {
+        .card {
+            width: $cardWidth;
+        }
+    }
+}
+
+.videoCount {
+    width: 32px;
+    height: 22px;
+    border-radius: $mainBorderRadius;
+    background: #da271e;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.videoImage {
+    width: 32px;
+    height: 22px;
+    background-size: cover;
+    background-position-x: center;
+    background-image: $youtubeImage;
+}
