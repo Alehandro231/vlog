@@ -1,9 +1,9 @@
 import { FC, useCallback, useMemo } from "react"
 import { mainContentList } from '../../constants/mainContentList'
 import { CardContent, SelectedContent, ShortContent, VideoContent } from "../../components"
-import styles from './styles.module.scss'
 import { StoreType } from "../../types/storeType"
 import { ECardType, IContent } from "../../types/contentTypes"
+import styles from './styles.module.scss'
 
 interface ContentProps {
     store: StoreType

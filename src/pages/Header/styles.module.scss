@@ -12,41 +12,47 @@
         background-position-y: 60%;
         background-position-x: center;
         background-size: cover;
+        cursor: pointer;
     }
 
-    .avatarContainer {
+    .contentContainer {
         padding: 24px 0;
         display: flex;
 
-        .avatar {
-            height: 160px;
-            width: 160px;
-            border-radius: 50%;
-            background-image: $avatarImage;
-            background-size: cover;
-            cursor: pointer;
-            box-sizing: border-box;
-            transition: $mainTransition;
-
-            &:hover {
-                box-shadow: $mainBoxShadow;
-            }
-        }
-
-        .content {
-            padding: 0 24px;
+        .avatar_and_content_container {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
 
-            .title {
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 24px;
+            .avatar {
+                height: 160px;
+                width: 160px;
+                min-width: 160px;
+                border-radius: 50%;
+                background-image: $avatarImage;
+                background-size: cover;
+                cursor: pointer;
+                box-sizing: border-box;
+                transition: $mainTransition;
+    
+                &:hover {
+                    box-shadow: $mainBoxShadow;
+                }
             }
-
-            .description {
-              text-align: center;
+    
+            .content {
+                padding: 0 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .title {
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+    
+                .description {
+                  text-align: center;
+                }
             }
         }
 
@@ -79,6 +85,59 @@
                 .vk {
                     height: 34px;
                     background-image: $vkImage;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .contentContainer {
+        flex-direction: column;
+
+        .avatar_and_content_container {
+            justify-content: center;
+        }
+
+        .socialContainer {
+            margin-top: 16px;
+            height: 110px;
+        }
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .header {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .header {
+        .contentContainer {
+            .avatar_and_content_container {
+                .avatar {
+                    height: 100px;
+                    width: 100px;
+                    min-width: 100px;
+                }
+
+                .content {
+                    padding: 0 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+        
+                    .title {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+        
+                    .description {
+                        text-align: center;
+                    }
                 }
             }
         }

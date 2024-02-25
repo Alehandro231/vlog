@@ -1,6 +1,6 @@
 import { FC } from "react"
-import styles from './styles.module.scss'
 import { IContent } from "../../types/contentTypes"
+import styles from './styles.module.scss'
 
 export const VideoContent: FC<IContent> = ({
     name,

@@ -1,6 +1,5 @@
 import { FC } from "react"
 import { CardContentProps } from "../../types/contentTypes"
-
 import styles from './styles.module.scss'
 
 export const SelectedContent: FC<CardContentProps> = ({

@@ -1,7 +1,7 @@
 import { FC, memo, useCallback, useState } from 'react'
-import styles from './styles.module.scss'
 import { CardContentProps, EContentType } from '../../types/contentTypes'
 import { getVideoCount } from '../../utils/getVideoCount'
+import styles from './styles.module.scss'
 
 export const CardContent: FC<CardContentProps> = memo(({
     id,
