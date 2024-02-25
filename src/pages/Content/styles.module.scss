@@ -1,0 +1,12 @@
+@import '../../assets/assets.module.scss';
+
+.content {
+    background: $mainColor;
+    padding: 0 32px;
+}
+
+.cardListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

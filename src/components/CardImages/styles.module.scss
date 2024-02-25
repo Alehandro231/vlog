@@ -1,0 +1,39 @@
+@import '../../assets//assets.module.scss';
+@import '../../assets/cardImages/cardImages.styles.scss';
+
+.section {
+    max-width: 100%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: $mainBorderRadius $mainBorderRadius 0 0;
+    min-height: 240px;
+}
+
+@each $screenWidth, $cardHeight in $breakpointsCardSize {
+    @media screen and (max-width: $screenWidth) {
+        .section {
+            height: $cardHeight;
+        }
+    }
+}
+
+.egypt {
+    @extend .section;
+    background-image: $egypt;
+}
+
+.hotel_and_other {
+    @extend .section;
+    background-image: $hotel_and_other;
+}
+
+.hotel_animation {
+    @extend .section;
+    background-image: $hotel_animation;
+}
+
+.egypt-airport {
+    @extend .section;
+    background-image: $egypt-airport;
+}

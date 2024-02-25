@@ -1,0 +1,86 @@
+@import '../../assets/assets.module.scss';
+
+.header {
+    background: $mainColor;
+    padding: 32px;
+
+    .headerFon {
+        width: 100%;
+        height: 172px;
+        border-radius: $mainBorderRadius * 2;
+        background-image: $fonImage;
+        background-position-y: 60%;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+    .avatarContainer {
+        padding: 24px 0;
+        display: flex;
+
+        .avatar {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            background-image: $avatarImage;
+            background-size: cover;
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: $mainTransition;
+
+            &:hover {
+                box-shadow: $mainBoxShadow;
+            }
+        }
+
+        .content {
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .title {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            .description {
+              text-align: center;
+            }
+        }
+
+        .socialContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .socialItemContainer {
+                display: flex;
+                align-items: center;
+
+                .social {
+                    width: 34px;
+                    background-size: cover;
+                    background-position-x: center;
+                    margin-right: 12px;
+                }
+    
+                .instagram {
+                    height: 34px;
+                    background-image: $instaImage;
+                }
+    
+                .youtube {
+                    height: 24px;
+                    background-image: $youtubeImage;
+                }
+    
+                .vk {
+                    height: 34px;
+                    background-image: $vkImage;
+                }
+            }
+        }
+    }
+}

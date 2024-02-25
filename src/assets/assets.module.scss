@@ -1,0 +1,20 @@
+$fonImage: url('./fon.jpg');
+$avatarImage: url('./avatar.jpg');
+$vkImage: url('./vk.png');
+$youtubeImage: url('./youtube.png');
+$instaImage: url('./insta.png');
+
+$mainColor: #ffffff;
+$mainBorderColor: #f0f0f0;
+$mainBoxShadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+$mainTransition: box-shadow 0.5s;
+$mainBorderRadius: 8px;
+
+$breakpointsCardSize: (
+    2000px: 360px,
+    1160px: 300px,
+    970px: 240px,
+    790px: 300px,
+    670px: 240px,
+    548px: 100%,
+) 
