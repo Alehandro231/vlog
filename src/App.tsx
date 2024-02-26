@@ -6,7 +6,16 @@ import { Footer } from './pages/Footer'
 import { updateLocationHistory } from './utils/updateLocationHistory'
 import { StoreType } from './types/storeType'
 
-const getSectionList = () => window.location.pathname.split('/').filter(x => !!x)
+const getSectionList = () => {
+  const sectionList = [`${process.env.PUBLIC_URL}`]
+  const query = window.location.search.substring(3)
+
+  if (query) {
+    sectionList.push(...query.split('/').filter(x => !!x))
+  }
+
+  return sectionList
+}
 
 function App() {
   const [sectionList, setSectionList] = useState<string[]>(getSectionList)
