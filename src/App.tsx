@@ -35,7 +35,7 @@ function App() {
 
   const selectParentSection = (sectionName: string): void => {
     if (sectionName === 'home') {
-      updateSelectionList([])
+      updateSelectionList(['vlog'])
     }
 
     const idx = sectionList.findIndex(section => section === sectionName)
