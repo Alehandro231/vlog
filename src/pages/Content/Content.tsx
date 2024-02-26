@@ -31,7 +31,7 @@ export const Content: FC<ContentProps> = ({ store }) => {
     const onClickSelectedCard = useCallback(() => onClickContent(ECardType.SELECTED), [onClickContent])
 
     const content = useMemo(() => {
-        if (!sectionList.length) {
+        if (sectionList.length === 1) {
             return <div className={styles.cardListContainer}>
                 {mainContentList.map(content => <CardContent key={content.id} onClick={onClickChildrenCard} {...content} />)}
             </div>
@@ -40,7 +40,7 @@ export const Content: FC<ContentProps> = ({ store }) => {
         const contentList: JSX.Element[] = []
         let currentList: IContent[] = mainContentList
 
-        for (let i = 0; sectionList.length > i; i += 1) {
+        for (let i = 1; sectionList.length > i; i += 1) {
             const currentSectionName = sectionList[i]
             const nextSectionName = sectionList[i + 1]
             const currentSectionData = currentList.find(({ id }) => id === currentSectionName)
