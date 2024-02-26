@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.c20e1df2.css",
-    "main.js": "/static/js/main.569f6e1a.js",
-    "static/js/592.a1c0ef0e.chunk.js": "/static/js/592.a1c0ef0e.chunk.js",
-    "static/media/fon.jpg": "/static/media/fon.e9d2e61855af69ce7334.jpg",
-    "static/media/hotel_and_other.png": "/static/media/hotel_and_other.9c538af987c32b8fd395.png",
-    "static/media/egypt.jpg": "/static/media/egypt.b030471419574455e461.jpg",
-    "static/media/egypt-airport.jpg": "/static/media/egypt-airport.acdba9f3875cd8a41c8f.jpg",
-    "static/media/hotel_animation.jpg": "/static/media/hotel_animation.e0f46d1045043abd66fa.jpg",
-    "index.html": "/index.html",
-    "main.c20e1df2.css.map": "/static/css/main.c20e1df2.css.map",
-    "main.569f6e1a.js.map": "/static/js/main.569f6e1a.js.map",
-    "592.a1c0ef0e.chunk.js.map": "/static/js/592.a1c0ef0e.chunk.js.map"
+    "main.css": "/vlog/static/css/main.e69c19ba.css",
+    "main.js": "/vlog/static/js/main.61a0083b.js",
+    "static/js/592.a1c0ef0e.chunk.js": "/vlog/static/js/592.a1c0ef0e.chunk.js",
+    "static/media/fon.jpg": "/vlog/static/media/fon.e9d2e61855af69ce7334.jpg",
+    "static/media/hotel_and_other.png": "/vlog/static/media/hotel_and_other.9c538af987c32b8fd395.png",
+    "static/media/egypt.jpg": "/vlog/static/media/egypt.b030471419574455e461.jpg",
+    "static/media/egypt-airport.jpg": "/vlog/static/media/egypt-airport.acdba9f3875cd8a41c8f.jpg",
+    "static/media/hotel_animation.jpg": "/vlog/static/media/hotel_animation.e0f46d1045043abd66fa.jpg",
+    "index.html": "/vlog/index.html",
+    "main.e69c19ba.css.map": "/vlog/static/css/main.e69c19ba.css.map",
+    "main.61a0083b.js.map": "/vlog/static/js/main.61a0083b.js.map",
+    "592.a1c0ef0e.chunk.js.map": "/vlog/static/js/592.a1c0ef0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c20e1df2.css",
-    "static/js/main.569f6e1a.js"
+    "static/css/main.e69c19ba.css",
+    "static/js/main.61a0083b.js"
   ]
 }
