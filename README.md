@@ -1,3 +1,6 @@
+## view website page
+https://alehandro231.github.io/vlog/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
